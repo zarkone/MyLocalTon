@@ -261,7 +261,7 @@ public class MyWallet {
         String nonBounceableBase64 = address.toString(true, false, false, true);
         String bounceableBase64 = address.toString(true, false, true, true);
 
-        log.info("Mnemonic of new private key for address", )
+        log.info("Mnemonic of new private key for address {} is: {}", fullAddress, String.join(" ", mnemonic));
         return WalletAddress.builder()
                 .nonBounceableAddressBase64Url(nonBounceableBase64url)
                 .bounceableAddressBase64url(bounceableBase64url)
